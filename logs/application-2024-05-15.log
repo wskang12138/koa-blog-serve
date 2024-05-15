@@ -1,0 +1,20 @@
+[2024-05-15 11:13:56] [ERROR] MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at Timeout._onTimeout (D:\nodeServe\koa-blog-server\node_modules\mongodb\src\sdam\topology.ts:562:30)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7) {
+  reason: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) { '127.0.0.1:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {}
+}
